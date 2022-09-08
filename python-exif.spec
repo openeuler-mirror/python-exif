@@ -1,11 +1,11 @@
 %global _empty_manifest_terminate_build 0
 Name:		python-exif
-Version:	1.3.4
+Version:	1.3.5
 Release:	1
 Summary:	Read and modify image EXIF metadata using Python.
 License:	MIT 
 URL:		https://gitlab.com/TNThieding/exif
-Source0:	https://files.pythonhosted.org/packages/3b/c8/b9450ea444eef6d3daeb3d517b7d4a2ed42c245a35e87aa5f27d54de8059/exif-1.3.4.tar.gz
+Source0:	https://files.pythonhosted.org/packages/f2/8d/0db23fa243abfd71246df00550663a1b0e23542368d1040d55fc5ef3cbe8/exif-1.3.5.tar.gz
 BuildArch:	noarch
 
 Requires:	python3-plum-py
@@ -31,7 +31,7 @@ Read and modify image EXIF metadata using Python without any third-party softwar
 dependencies. For example, batch process image metadata using a Python script.
 
 %prep
-%autosetup -n exif-1.3.4
+%autosetup -n exif-1.3.5
 
 %build
 %py3_build
@@ -71,5 +71,8 @@ mv %{buildroot}/doclist.lst .
 %{_docdir}/*
 
 %changelog
+* Fri Sep 09 2022 hkgy <kaguyahatu@outlook.com> - 1.3.5-1
+- Update to 1.3.5
+
 * Tue Dec 14 2021 Python_Bot <Python_Bot@openeuler.org> - 1.3.4-1
 - Package Init
